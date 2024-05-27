@@ -9,7 +9,7 @@ function Header() {
         <div className="header_content">
           <div className="header__logo-container">
             <div className="header__logo-img-cont">
-              <img src={Profile} alt="" />
+              <img className='imagen-perfil' src={Profile} alt="" />
             </div>
             <span className='header__logo-sub'>
               JEISSON CARDENAS

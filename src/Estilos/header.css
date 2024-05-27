@@ -72,7 +72,7 @@ body{
     margin-right: 1.5rem;
     
 }
-img{
+.imagen-perfil{
     background-color: var(--primary-color);
     border-radius: 50rem;
     width: 100%;

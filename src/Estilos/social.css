@@ -1,5 +1,20 @@
 .social{
-    width: 30px;
-    height: auto;
-    background-color: #8e8e8e;
+    background-color: #fff;
+    padding: .3rem;
+    width: fit-content;
+}
+.img-social{
+    width: 3rem;
+}
+.img-social a{
+    width: 100%;
+    display: block;
+    padding: .4rem;
+    transition: background-color .3s easi;
+}
+.img-social img{
+    width: 100%;
+}
+.img-social:hover{
+    background-color: var(--);
 }

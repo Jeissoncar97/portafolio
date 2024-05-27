@@ -9,8 +9,10 @@ function App() {
       <Header />
       <aside className="social">
         <Social 
-          img={<img src={LinkedInIcon} alt="LinkedIn" />}
+          img={LinkedInIcon}
           alt="Jeisson Cardenas Linkedin"
+          link="https://www.linkedin.com/in/jeisson-cardenas/"
+          title = "Jeisson Cardenas Linkedin"
         />
       </aside>
     </>

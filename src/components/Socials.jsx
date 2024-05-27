@@ -1,17 +1,15 @@
-import PropTypes from 'prop-types';
+import '../Estilos/social.css'
 
 function Social(props) {
   return (
-    <div>
-      {props.img}
-      <span>{props.alt}</span>
+    <div className='img-social'>
+      <a target='_blank' href={props.link}>
+        <img src={props.img} alt={props.alt} title ={props.title} />
+        </a>
     </div>
   );
 }
 
-Social.propTypes = {
-  img: PropTypes.element.isRequired, // Validación para la propiedad img
-  alt: PropTypes.string.isRequired,
-};
+
 
 export default Social;
