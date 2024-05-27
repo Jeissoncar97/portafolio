@@ -1,0 +1,5 @@
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Explicitly set the line endings for specific files
+*.json text eol=lf
