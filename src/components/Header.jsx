@@ -15,7 +15,7 @@ function Header() {
               JEISSON CARDENAS
             </span>
           </div>
-          <div className="header_main">
+          <nav className="header_main">
             <ul className='header-links'>
               <li className='header-link'>
                 <a href="#home" className='link'>Inicio</a>
@@ -34,7 +34,7 @@ function Header() {
                 <span className='noche'></span>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
     </>
