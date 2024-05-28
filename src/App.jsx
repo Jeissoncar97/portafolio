@@ -11,7 +11,8 @@ import Copy from './assets/copy.svg'
 
 function App() {
   
-  const [copy, setCopy] = useState("") 
+  const correoDefoult = "jeissoncar97@gmail.com"
+  const [copy, setCopy] = useState(correoDefoult) 
 
   const handleCopy = (event) =>{
       setCopy(event.target.value)
@@ -53,8 +54,10 @@ function App() {
             <input type="text" 
             name="email" 
             id="text" 
-            value="jeissoncar97@gmail.com"
-            onChange={handleCopy} />
+            value={copy}
+            onChange={handleCopy}
+            readOnly
+            />
             <button id='btn' >
               <img src={Copy} alt="Copy" onClick={handleSubmit} />
             </button>
