@@ -1,0 +1,39 @@
+.home{
+    background: 
+    linear-gradient(to right, rgba(245, 245, 245, 0.6), rgba(245, 245, 245, .8)), 
+    url(../assets/common-bg.svg);
+}
+.hero-home-inf{
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    text-align: center;
+}
+.hero-home-inf h1 {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.hero-home-inf .hero-home-description{
+    width: 800px;
+    font-size: 1.1rem;
+}
+.hero-home-description span{
+    color: #C0392B;
+}
+.hero-home-inf .hero-home-button{
+    margin-top: 80px;
+}
+.hero-home-inf .hero-home-button a{
+    letter-spacing: 1px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: .8rem 4rem;
+    font-size: 1rem;
+    border-radius: .3rem;
+    font-weight: 700;
+}
