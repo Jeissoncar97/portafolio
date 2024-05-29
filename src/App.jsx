@@ -7,6 +7,7 @@ import LinkedInIcon from './assets/linkedin.svg'
 import Github from './assets/github.svg'
 import Correo from './assets/correo.svg'
 import Copy from './assets/copy.svg'
+import Send from './assets/send.svg'
 
 
 function App() {
@@ -61,6 +62,9 @@ function App() {
             <button id='btn' >
               <img src={Copy} alt="Copy" onClick={handleSubmit} />
             </button>
+            <a  href='mailto:jeissoncar97@gmail.com'>
+              <img src={Send} alt="Send" />
+            </a>
           </div>
           <div className="hero-home-button">
             <a href="#projects" className='button'>PROYECTOS</a>

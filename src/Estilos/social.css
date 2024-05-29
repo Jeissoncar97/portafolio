@@ -19,7 +19,7 @@
     width: 3rem;
     border-radius: .5rem;
     transition: all 0.3s;
-    display: inline-block; /* Asegura que el contenedor se ajuste al contenido */
+    display: inline-block; 
 }
 
 .img-social a {
@@ -27,13 +27,13 @@
     width: 100%;
     height: 100%;
     padding: 0.4rem;
-    box-sizing: border-box; /* Incluye el padding dentro del tamaño total del elemento */
+    box-sizing: border-box;
 }
 
 .img-social img {
     width: 100%;
     height: auto;
-    display: block; /* Elimina el espacio extra bajo la imagen */
+    display: block; 
 }
 
 .img-social:hover {
