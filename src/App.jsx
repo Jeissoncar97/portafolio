@@ -1,17 +1,20 @@
 import { useState } from 'react'
+import './Estilos/projects.css'
 import './App.css'
+import './Estilos/section-hero-home.css'
 import Header from './components/Header'
 import Social from './components/Socials'
-import './Estilos/section-hero-home.css'
 import LinkedInIcon from './assets/linkedin.svg'
 import Github from './assets/github.svg'
 import Correo from './assets/correo.svg'
 import Copy from './assets/copy.svg'
 import Send from './assets/send.svg'
 import Swal from "sweetalert2";
+import Code from './assets/code.svg'
+import Project from './components/Project'
+import Imagenprueba from './assets/prueba.png'
 
 function App() {
-  
   
 
   const correoDefoult = "jeissoncar97@gmail.com"
@@ -34,27 +37,7 @@ function App() {
   return (
     <>
       <Header />
-      <aside className="social">
-        <Social 
-          img={LinkedInIcon}
-          alt="Jeisson Cardenas Linkedin"
-          link="https://www.linkedin.com/in/jeisson-cardenas/"
-          title = "Jeisson Cardenas Linkedin"
-        />
-        <Social 
-          img={Github}
-          alt="Jeisson Cardenas Github"
-          link="https://www.linkedin.com/in/jeisson-cardenas/"
-          title = "Jeisson Cardenas Github"
-        />
-        <Social 
-          img={Correo}
-          alt="Jeisson Cardenas Correo"
-          link="mailto:jeissoncar97@gmail.com"
-          title = "Jeisson Cardenas correo"
-          className="correo-color"
-          />
-      </aside>
+      
       <section className='home' id='home'>
         <div className="hero-home-inf">
           <h1>Hola, Soy Jeisson Cardenas</h1>
@@ -81,9 +64,74 @@ function App() {
           <div className="hero-home-button">
             <a href="#projects" className='button'>PROYECTOS</a>
           </div>
+          
+        </div>
+        <aside className="social">
+          <Social 
+            img={LinkedInIcon}
+            alt="Jeisson Cardenas Linkedin"
+            link="https://www.linkedin.com/in/jeisson-cardenas/"
+            title = "Jeisson Cardenas Linkedin"
+          />
+          <Social 
+            img={Github}
+            alt="Jeisson Cardenas Github"
+            link="https://www.linkedin.com/in/jeisson-cardenas/"
+            title = "Jeisson Cardenas Github"
+          />
+          <Social 
+            img={Correo}
+            alt="Jeisson Cardenas Correo"
+            link="mailto:jeissoncar97@gmail.com"
+            title = "Jeisson Cardenas correo"
+            className="correo-color"
+            />
+        </aside>
+        <div className="home-hero__mouse-scroll-cont">
+          <div className='mouse'></div>
         </div>
       </section>
-      
+      <section className='proyectos' id='proyectos'>
+        <h2><img src={Code} alt="Code" className='icon'/> Proyectos</h2>
+        <div className='projects-all'>
+          <Project 
+          nameProject='Inicio de sesion'
+          imgProject={Imagenprueba}
+          alt='Imagen proyecto inicio de sesión'
+          skill1= 'React'
+          skill2= 'Firebase'
+          skill3= 'Mongo'
+          skill4= 'Express'
+          projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
+          linkGithub='#'
+          linkPage='#'
+          />
+          <Project 
+          nameProject='Inicio de sesion'
+          imgProject={Imagenprueba}
+          alt='Imagen proyecto inicio de sesión'
+          skill1= 'React'
+          skill2= 'Firebase'
+          skill3= 'Mongo'
+          skill4= 'Express'
+          projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
+          linkGithub='#'
+          linkPage='#'
+          />
+          <Project 
+          nameProject='Inicio de sesion'
+          imgProject={Imagenprueba}
+          alt='Imagen proyecto inicio de sesión'
+          skill1= 'React'
+          skill2= 'Firebase'
+          skill3= 'Mongo'
+          skill4= 'Express'
+          projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
+          linkGithub='#'
+          linkPage='#'
+          />
+        </div>
+      </section>
     </>
   )
 }
