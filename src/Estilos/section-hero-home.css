@@ -1,11 +1,13 @@
 .home{
     background: 
-    linear-gradient(to right, rgba(245, 245, 245, 0.6), rgba(245, 245, 245, .8)), 
+    linear-gradient(to right, rgba(245, 245, 245, 0.4), rgba(245, 245, 245, 0.8)), 
     url(../assets/common-bg.svg);
+    height: 100vh;
+    padding-top: 120px;
+    
 }
 .hero-home-inf{
     max-width: 1200px;
-    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -31,12 +33,58 @@
 .hero-home-inf .hero-home-button a{
     letter-spacing: 1px;
     background-color: var(--primary-color);
-    color: white;
+    color: black;
     padding: .8rem 4rem;
     font-size: 1rem;
     border-radius: .3rem;
     font-weight: 700;
+    transition: all .3s ease;
 }
+.hero-home-inf .hero-home-button a:hover{
+    background-color: var(--primary-color-4);
+    color: white;
+}
+.hero-home-email{
+    margin-top: 2rem;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .hero-home-inf .input-hero-home{
+    background-color: white;
+    width: 300px;
+    height: 2rem;
+    text-align: center;
+    border: 1px solid rgb(135, 135, 135);
+    outline: none;
+    cursor: default;
+    border-radius: 10px;
+}
+.home .hero-home-inf .btn-hero-copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .3rem;
+    height: 2rem;
+    width: 4rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.home .hero-home-inf .btn-hero-copy:hover{
+    background-color: var(--primary-color-4);
+}
+.home .hero-home-inf .btn-hero-copy img{
+    color: white;
+    width: 1.2rem;
+}
+
 #btn{
     cursor: pointer;
+}
+.custom-swal-wide{
+    width: 25px;
 }

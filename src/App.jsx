@@ -8,10 +8,12 @@ import Github from './assets/github.svg'
 import Correo from './assets/correo.svg'
 import Copy from './assets/copy.svg'
 import Send from './assets/send.svg'
-
+import Swal from "sweetalert2";
 
 function App() {
   
+  
+
   const correoDefoult = "jeissoncar97@gmail.com"
   const [copy, setCopy] = useState(correoDefoult) 
 
@@ -20,6 +22,14 @@ function App() {
   }
   const handleSubmit = () =>{
     navigator.clipboard.writeText(copy)
+    Swal.fire({
+      text: "¡Correo compiado!",
+      icon: "success",
+      timer: 1500,
+      customClass: {
+        popup: 'custom-swal-wide'
+      }
+    })
   }
   return (
     <>
@@ -52,17 +62,19 @@ function App() {
             <p>Soy estudiante de ingenieria en sistemas, apasionado por el <span>DESARROLLO WEB. </span>Me interesa aprender y aplicar tecnologías modernas para crear aplicaciones eficientes y funcionales. Mi objetivo es mejorar constantemente mis <span>habilidades técnicas</span> y contribuir de manera efectiva en los proyectos en los que participo.</p>
           </div>
           <div className='hero-home-email'>
-            <input type="text" 
+            <input 
+            className='input-hero-home'
+            type="text" 
             name="email" 
             id="text" 
             value={copy}
             onChange={handleCopy}
             readOnly
             />
-            <button id='btn' >
-              <img src={Copy} alt="Copy" onClick={handleSubmit} />
+            <button id='btn' className='btn-hero-copy' onClick={handleSubmit}>
+              <img src={Copy} alt="Copy"  />
             </button>
-            <a  href='mailto:jeissoncar97@gmail.com'>
+            <a  href='mailto:jeissoncar97@gmail.com' className='btn-hero-copy'>
               <img src={Send} alt="Send" />
             </a>
           </div>
@@ -71,6 +83,7 @@ function App() {
           </div>
         </div>
       </section>
+      
     </>
   )
 }

@@ -1,6 +1,9 @@
 :root {
     --primary-color: #7843E9;
-    --primary-color-suave: #dcd7fd;
+    --primary-color-1: #dcd7fd;
+    --primary-color-2: #a38ef7;
+    --primary-color-3: #8660f2;
+    --primary-color-4: #662cd5;
 }
 
 .social {
@@ -37,7 +40,7 @@
 }
 
 .img-social:hover {
-    background-color: var(--primary-color-suave);
+    background-color: var(--primary-color-1);
 }
 
 .correo-color {
