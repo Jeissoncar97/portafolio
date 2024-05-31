@@ -1,15 +1,29 @@
-
-.home{
-    position: relative;
+.cont-linear{
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.linea{
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+}
+.home{
+    max-width: none;
+    position: relative;
+    width: 100vw;
     background: 
     linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 1)), 
     url(../assets/common-bg.svg);
-    height: vh;
     padding-top: 120px;
     display: flex;
-    
+    flex-direction: column;
 }
+html.swal2-shown, body.swal2-shown {
+    overflow-y: auto ;
+  }
 .hero-home-inf{
     max-width: 1200px;
     width: 100vw;
@@ -36,6 +50,8 @@
     margin-top: 80px;
 }
 .button{
+    display: flex;
+    align-items: center;
     margin: 0 1rem;
     background-color: var(--primary-color);
     color: black;
@@ -63,7 +79,6 @@
     text-align: center;
     border: 1px solid rgb(135, 135, 135);
     outline: none;
-    cursor: default;
     border-radius: 10px;
 }
 .home .hero-home-inf .btn-hero-copy{
@@ -91,14 +106,12 @@
     cursor: pointer;
 }
 .custom-swal-wide{
-    width: 25px;
+    width: 25rem;
 }
 .home-hero__mouse-scroll-cont {
-    margin: 100px 0;
-    position: absolute;
-    bottom: 3%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 80px 0 100px 0;
+    display: flex;
+    justify-content: center;
 }
 .mouse {
     width: 25px;

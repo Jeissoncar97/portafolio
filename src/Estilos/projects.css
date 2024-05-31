@@ -1,12 +1,12 @@
-.proyectos{
+section{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 5rem;
+    padding-top: 5rem;
 }
-.proyectos h2{
+section h2{
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 2rem;
+    margin-bottom: .4rem;
     text-align: center;
 }
 .proyectos .projects-all{
@@ -88,6 +88,7 @@
     border-radius: 10px;
     color: var(--secondary-color);
 }
-.icons{
-    width: 100%;
+.icon{
+    width: 19px;
+    margin-right: .5rem;
 }

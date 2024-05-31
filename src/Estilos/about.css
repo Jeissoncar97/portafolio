@@ -1,0 +1,69 @@
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.aboutSection h2{
+    margin-bottom: 90px;
+}
+.aboutSection h3{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color-3)
+
+}
+.aboutSection .cont-about{
+    display: flex;
+}
+.about .cont-foto{
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+.about .cont-foto img{
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about{
+    width: 50%;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.cont-about .about-description p{
+    padding: 10px 40px;
+}
+.cont-about .about-description span{
+    color: var(--secondary-color);
+}
+.cont-about .cont-skills{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont-about .cont-skills h2{
+    color: var(--primary-color-3);
+}
+.cont-skills .skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cont-skills .skills span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+    text-align: center;
+}

@@ -15,7 +15,7 @@ body{
     font-weight: 500;
 }
 .header{
-    width: 100%;
+    width: 100vw;
     padding: 15px 0;
     background-color: #fff;
     position: fixed;
@@ -40,7 +40,9 @@ body{
     color: var(--primary-color);
 }
 .header_main {
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header_main ul{
     display: flex;
@@ -64,8 +66,8 @@ body{
     letter-spacing: 1px;
 }
 .header__logo-img-cont {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
