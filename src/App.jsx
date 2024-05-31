@@ -24,6 +24,8 @@ import HtmlIcon from './components/icons/Html5'
 import CssIcon from './components/icons/Css3'
 import MongoDBIcon from './components/icons/MongoDB'
 import ContactForm from './components/contact'
+import CV from '../public/CVJeissonCardenas.pdf'
+import GithubIcon from './components/icons/Github'
 
 function App() {
   
@@ -231,8 +233,12 @@ function App() {
         
       </section>
       <footer>
-        <div className="nombre">JEISSON ANDRES CARDENAS VERDUGO</div>
-        <div className="curriculo"></div>
+        <div className="cont-footer">
+          <h4>JEISSON ANDRES CARDENAS VERDUGO</h4>
+          <a href={CV} target="_blank" rel="noopener noreferrer"  >descargar</a>
+          <a href="https://jeissoncar97.github.io/portafolio5/"><GithubIcon /></a>
+        
+        </div>
       </footer>
     </>
   )
