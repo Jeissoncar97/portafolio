@@ -22,6 +22,7 @@ form{
     text-align: start;
     padding: 40px;
     background-color: white;
+    margin-bottom: 200px;
 }
 .form__group{
     position: relative;
