@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .cont-linear{
     width: 100%;
     display: flex;
