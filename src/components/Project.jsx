@@ -3,6 +3,7 @@ import GithubTag from '../assets/githubTag.svg'
 import Link from '../assets/link.svg'
 
 
+
 const Project = (props) => {
 
 
@@ -24,14 +25,14 @@ const Project = (props) => {
                 <p>{props.projectDescription}</p>
             </div>
             <footer className='project-footer'>
-                <a href={props.linkGithub} className='button'>
+                <a href={props.linkGithub} className='button' target='_blank'>
                     <img src={GithubTag} alt="" className='icon'/>
                     <span>Github</span>
                 </a>
-                <a href={props.linkPage} className='button'>
-                    <img src={Link} alt="" className='icon'/>
-                    <span>Página</span>
-                </a>
+                  <a href={props.linkPage} className='button' target='_blank'>
+                      <img src={Link} alt="" className='icon'/>
+                      <span>Página</span>
+                  </a>
             </footer>
         </div>
       </div>

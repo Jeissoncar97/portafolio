@@ -1,6 +1,8 @@
 #root{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+
 }
 
 *{
@@ -13,6 +15,7 @@
 body{
     font-family: "Onest", sans-serif;
     font-weight: 500;
+    scroll-behavior: smooth;
 }
 .header{
     width: 100vw;

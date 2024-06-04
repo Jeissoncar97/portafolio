@@ -7,15 +7,13 @@ import './Estilos/contact.css'
 import Header from './components/Header'
 import Foto from './assets/foto.jpg'
 import Social from './components/Socials'
-import LinkedInIcon from './assets/linkedin.svg'
-import Github from './assets/github.svg'
-import Correo from './assets/correo.svg'
 import Copy from './assets/copy.svg'
 import Send from './assets/send.svg'
 import Swal from "sweetalert2";
 import Project from './components/Project'
-import Imagenprueba from './assets/prueba.png'
-import Person from './assets/person.svg'
+import LoginProject from './assets/imgProjects/login.png'
+import FoxpizzaProject from './assets/imgProjects/paginaFox.png'
+import ApisProject from './assets/imgProjects/Apis.png'
 import Tecnologias from './components/Tecnologias'
 import ReactIcon from './components/icons/React'
 import NodeIcon from './components/icons/Node'
@@ -23,16 +21,23 @@ import FirebaseIcon  from './components/icons/Firebase'
 import HtmlIcon from './components/icons/Html5'
 import CssIcon from './components/icons/Css3'
 import MongoDBIcon from './components/icons/MongoDB'
-import ContactForm from './components/contact'
+import ContactForm from './components/Contact'
 import CV from './assets/CVJeissonCardenas.pdf'
 import GithubIcon from './components/icons/Github'
+import GithubMainIcon from './components/icons/GithubMain'
+import LinkedinIcon from './components/icons/Linkedin'
+import MailIcon from './components/icons/MailIcon'
+import CodeIcon from './components/icons/CodeIcon'
+import Person from './components/icons/Person'
+import Contact from './components/icons/ContactIcon'
+
 import './Estilos/footer.css'
 
 function App() {
   
 
-  const correoDefoult = "jeissoncar97@gmail.com"
-  const [copy, setCopy] = useState(correoDefoult) 
+  const correoDefault = "jeissoncar97@gmail.com"
+  const [copy, setCopy] = useState(correoDefault) 
 
   const handleCopy = (event) =>{
       setCopy(event.target.value)
@@ -59,7 +64,7 @@ function App() {
             <p>Estudiante de ingenieria en sistemas, apasionado por el <span>DESARROLLO WEB. </span></p>
           </div>
           <div className='hero-home-email'>
-            <input 
+            <input
             className='input-hero-home'
             type="text" 
             name="email" 
@@ -82,19 +87,19 @@ function App() {
         </div>
         <aside className="social">
           <Social 
-            img={LinkedInIcon}
+            img={<LinkedinIcon/>}
             alt="Jeisson Cardenas Linkedin"
             link="https://www.linkedin.com/in/jeisson-cardenas/"
             title = "Jeisson Cardenas Linkedin"
           />
           <Social 
-            img={Github}
+            img={<GithubMainIcon/>}
             alt="Jeisson Cardenas Github"
             link="https://www.linkedin.com/in/jeisson-cardenas/"
             title = "Jeisson Cardenas Github"
           />
           <Social 
-            img={Correo}
+            img={<MailIcon/>}
             alt="Jeisson Cardenas Correo"
             link="mailto:jeissoncar97@gmail.com"
             title = "Jeisson Cardenas correo"
@@ -106,14 +111,14 @@ function App() {
         </div>
       </section>
       <section className='proyectos' id='projects'>
-        <h2><img src="" alt="Code" className='icon'/> Proyectos</h2>
+        <h2><CodeIcon /> Proyectos</h2>
         <div className="cont-linear">
           <div className="linea"></div>
         </div>
         <div className='projects-all'>
           <Project 
           nameProject='Inicio de sesion'
-          imgProject={Imagenprueba}
+          imgProject={LoginProject}
           alt='Imagen proyecto inicio de sesión'
           skill1= 'React'
           skill2= 'Firebase'
@@ -124,39 +129,36 @@ function App() {
           linkPage='#'
           />
           <Project 
-          nameProject='Inicio de sesion'
-          imgProject={Imagenprueba}
-          alt='Imagen proyecto inicio de sesión'
-          skill1= 'React'
-          skill2= 'Firebase'
-          skill3= 'Mongo'
-          skill4= 'Express'
-          projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
-          linkGithub='#'
-          linkPage='#'
+          nameProject='Fox Pizza Gourmet'
+          imgProject={FoxpizzaProject}
+          alt='Imagen Pagina Fox Pizza'
+          skill1= 'Html'
+          skill2= 'Css'
+          skill3= 'Javascript'
+          skill4= 'Bootstrap'
+          projectDescription = 'En este proyecto, realice la pagina web de una pizzeria familiar, con el objetivo de obtener mas visitas, donde se puede ver varias cosas como el menu, contacto, ubicacion y otras mas'
+          linkGithub='https://github.com/Jeissoncar97/PaginaFox'
+          linkPage='https://jeissoncar97.github.io/PaginaFox/'
           />
           <Project 
-          nameProject='Inicio de sesion'
-          imgProject={Imagenprueba}
+          nameProject='Pagina de APISs'
+          imgProject={ApisProject}
           alt='Imagen proyecto inicio de sesión'
-          skill1= 'React'
-          skill2= 'Firebase'
-          skill3= 'Mongo'
-          skill4= 'Express'
-          projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
-          linkGithub='#'
-          linkPage='#'
+          skill1= 'Html'
+          skill2= 'Css'
+          skill3= 'Javascript'
+          skill4= 'Bootstrap'
+          projectDescription = 'En este proyecto, relice una pagina donde se podran encontrar con barias paginas con apis como, cockails, Rick y Morty, peliculas'
+          linkGithub='https://github.com/Jeissoncar97/Apis'
+          linkPage='https://jeissoncar97.github.io/Apis/'
           />
         </div>
       </section>
-      <section className="aboutSection">
-        <h2>
-          <img src={Person} alt="Code" className='icon'/> Sobre mí
-            <div className="cont-linear">
-                <div className="linea"></div>  
-            </div>
-        </h2>
-        
+      <section className="aboutSection" id='about'>
+        <h2><Person />Sobre mí</h2>
+        <div className="cont-linear">
+          <div className="linea"></div>  
+        </div>
         <div className="cont-about">
           <div className='about'>
             <div className='about-description'>
@@ -218,14 +220,12 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='contact'>
+      <section className='contact' id='contact'>
         <div className='contactContainer'>
-          <h2>
-            <img src={Person} alt="Code" className='icon'/> Contacto
-              <div className="cont-linear">
-                  <div className="linea"></div>  
-              </div>
-          </h2>
+          <h2><Contact />Contacto</h2>
+          <div className="cont-linear">
+            <div className="linea"></div>
+          </div>
           <p>No dude en ponerse en contacto conmigo enviando el siguiente formulario y me comunicaré con usted lo antes posible.</p>
           <div className='contact-form'>
             <ContactForm />
