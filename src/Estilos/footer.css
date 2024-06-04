@@ -63,7 +63,7 @@
 .footer-repository a{
     padding: 1rem;
     color: white;
-    transition: color 0.3s;
+    transition: color 0.3 s;
 }
 .footer-repository a:hover{
     color: rgb(166, 146, 146);
