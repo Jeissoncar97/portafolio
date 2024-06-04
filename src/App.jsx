@@ -136,7 +136,7 @@ function App() {
           skill2= 'Css'
           skill3= 'Javascript'
           skill4= 'Bootstrap'
-          projectDescription = 'En este proyecto, realice la pagina web de una pizzeria familiar, con el objetivo de obtener mas visitas, donde se puede ver varias cosas como el menu, contacto, ubicacion y otras mas'
+          projectDescription = 'En este proyecto, realicé la página web de una pizzería familiar, con el objetivo de obtener más visitas. En la página se pueden ver varias secciones como el menú, contacto, ubicación y otras más.'
           linkGithub='https://github.com/Jeissoncar97/PaginaFox'
           linkPage='https://jeissoncar97.github.io/PaginaFox/'
           />
@@ -148,7 +148,7 @@ function App() {
           skill2= 'Css'
           skill3= 'Javascript'
           skill4= 'Bootstrap'
-          projectDescription = 'En este proyecto, relice una pagina donde se podran encontrar con barias paginas con apis como, cockails, Rick y Morty, peliculas'
+          projectDescription = 'En este proyecto, realicé una página donde se podrán encontrar varias secciones con APIs como cócteles, Rick y Morty, películas y más'
           linkGithub='https://github.com/Jeissoncar97/Apis'
           linkPage='https://jeissoncar97.github.io/Apis/'
           />
