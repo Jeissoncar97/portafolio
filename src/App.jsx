@@ -95,7 +95,7 @@ function App() {
           <Social 
             img={<GithubMainIcon/>}
             alt="Jeisson Cardenas Github"
-            link="https://www.linkedin.com/in/jeisson-cardenas/"
+            link="https://github.com/Jeissoncar97"
             title = "Jeisson Cardenas Github"
           />
           <Social 
@@ -239,7 +239,7 @@ function App() {
             <h4>JEISSON CARDENAS</h4>
             <p>Estudiante de ingenieria en sistemas, apasionado por el <span>DESARROLLO WEB.</span> Aprendiendo nuevas tecnologias dia a dia y enfocado en <span>frontend</span></p>
               <div className='footer-button'>
-                <a href={CV} target="_blank" rel="noopener noreferrer" className='button' >descargar CV</a>
+                <a href={CV} target="_blank" rel="noopener noreferrer" className='button' >Descargar CV</a>
               </div>
           </div>
           <div className="footer-repository">

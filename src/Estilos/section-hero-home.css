@@ -18,19 +18,20 @@ html{
     max-width: none;
     position: relative;
     width: 100vw;
+    height: 100vh;
     background: 
     linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 1)), 
     url(../assets/common-bg.svg);
     padding-top: 120px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 html.swal2-shown, body.swal2-shown {
     overflow-y: auto ;
   }
 .hero-home-inf{
     max-width: 1200px;
-    width: 100vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -58,7 +59,7 @@ html.swal2-shown, body.swal2-shown {
     align-items: center;
     margin: 0 1rem;
     background-color: var(--primary-color);
-    color: black;
+    color: white;
     padding: .8rem 2rem;
     font-size: 1rem;
     border-radius: .3rem;
@@ -67,7 +68,6 @@ html.swal2-shown, body.swal2-shown {
 }
 .button:hover{
     background-color: var(--primary-color-4);
-    color: white;
 }
 .hero-home-email{
     margin-top: 2rem;
