@@ -44,26 +44,6 @@ function Header() {
 					</nav>
 					
 				</div>
-        <nav className="header_main-responsive" >
-						<ul className="header-links-responsive">
-							<li className="header-link-responsive">
-								<a href="#home" className="link-responsive">
-									Inicio
-								</a>
-							</li>
-							<li className="header-link-responsive">
-								<a href="#projects" className="link-responsive">
-									Proyectos
-								</a>
-							</li>
-							<li className="header-link-responsive">
-								<a href="#about">Acerca</a>
-							</li>
-							<li className="header-link-responsive">
-								<a href="#contact">Contacto</a>
-							</li>
-						</ul>
-					</nav>
 
 			</div>
       

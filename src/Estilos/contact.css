@@ -1,7 +1,6 @@
 .contact{
     max-width: none;
     position: relative;
-    width: 100vw;
     background: 
     linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 1)), 
     url(../assets/common-bg.svg);

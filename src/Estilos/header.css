@@ -18,18 +18,16 @@ body{
     scroll-behavior: smooth;
 }
 .header{
-    width: 100vw;
+    width: 100%;
     padding: 15px 0;
     background-color: #fff;
-    position: fixed;
-    z-index: 1;
 }
 .header_content{
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px 20px;
 }
 .header__logo-container{
@@ -43,7 +41,7 @@ body{
     color: var(--primary-color);
 }
 .header_main {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -89,14 +87,23 @@ body{
     align-items: center;
     color: black;
 }
-@media screen and (max-width: 910px) {
+
+
+@media (min-width: 1024px) {
     .header{
-        position: relative;
+        position: fixed;
+        z-index: 1;
     }
-    .header_main-responsive{
+    .header_content{
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .header_main {
         display: flex;
-    }
-    .header_main{
-        display: none;
+        justify-content: center;
+        align-items: center;
     }
 }
