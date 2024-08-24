@@ -9,13 +9,10 @@
 
 .social {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #fff;
     padding: .3rem;
     width: fit-content;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .img-social {
@@ -47,4 +44,20 @@
 
 .correo-color {
     background-color: black;
+}
+
+@media (min-width: 768px) {
+    .social {
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+@media (max-width: 1280px) {
+
 }

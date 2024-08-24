@@ -17,7 +17,6 @@ html{
 .home{
     max-width: none;
     position: relative;
-    width: 100vw;
     height: 100vh;
     background: 
     linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 1)), 
@@ -26,6 +25,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 html.swal2-shown, body.swal2-shown {
     overflow-y: auto ;
@@ -41,12 +41,11 @@ html.swal2-shown, body.swal2-shown {
     text-align: center;
 }
 .hero-home-inf h1 {
-    font-size: 3rem;
-    margin: 30px 0;
+    font-size: 2rem;
+    margin: 1rem;
 }
 .hero-home-inf .hero-home-description{
-    width: 800px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 .hero-home-description span{
     color: var(--secondary-color);
@@ -71,19 +70,19 @@ html.swal2-shown, body.swal2-shown {
 }
 .hero-home-email{
     margin-top: 2rem;
-    width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .home .hero-home-inf .input-hero-home{
     background-color: white;
-    width: 300px;
+    max-width: 250px;
     height: 2rem;
     text-align: center;
     border: 1px solid rgb(135, 135, 135);
     outline: none;
     border-radius: 10px;
+    padding: 10px 30px;
 }
 .home .hero-home-inf .btn-hero-copy{
     display: flex;
@@ -146,4 +145,21 @@ html.swal2-shown, body.swal2-shown {
         top: 27px
     }
 }
+@media (min-width: 768px) {
+    .hero-home-inf h1 {
+        font-size: 2.5rem;
+    }
+    .hero-home-inf .hero-home-description{
+        font-size: 1.1rem;
+    }
+}
 
+@media (min-width: 1024px) {
+    .hero-home-inf h1 {
+        font-size: 3rem;
+    }
+   
+}
+@media (max-width: 1280px) {
+
+}
