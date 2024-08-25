@@ -73,12 +73,14 @@ function App() {
             onChange={handleCopy}
             readOnly
             />
-            <button id='btn' className='btn-hero-copy' onClick={handleSubmit}>
-              <img src={Copy} alt="Copy"  />
-            </button>
-            <a  href='mailto:jeissoncar97@gmail.com' className='btn-hero-copy'>
-              <img src={Send} alt="Send" />
-            </a>
+            <div className="buttons-home">
+              <button id='btn' className='btn-hero-copy' onClick={handleSubmit}>
+                <img src={Copy} alt="Copy"  />
+              </button>
+              <a  href='mailto:jeissoncar97@gmail.com' className='btn-hero-copy'>
+                <img src={Send} alt="Send" />
+              </a>
+            </div>
           </div>
           <div className="hero-home-button">
             <a href="#projects" className='button'>PROYECTOS</a>
