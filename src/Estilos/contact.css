@@ -14,6 +14,7 @@
 }
 .contactContainer p{
     margin: 20px 0 40px 0;
+    padding: 0 .5rem ;
 }
 form{
     display: flex;
