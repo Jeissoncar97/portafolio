@@ -24,6 +24,9 @@ section h2 svg{
 .proyectos .article-project {
     margin-bottom:120px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 1rem;
 }
 .proyectos .article-project:hover .img-project{
@@ -31,9 +34,8 @@ section h2 svg{
 }
 .article-project .cont-img-project{
     flex: 0 0 auto;
-
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 262.5px;
     margin-right: 1rem; 
     overflow: hidden;
     border-radius: 20px;
@@ -97,4 +99,20 @@ section h2 svg{
 .icon{
     width: 19px;
     margin-right: .5rem;
+}
+
+@media (min-width: 856px) {
+    .proyectos .article-project {
+        flex-direction: row;
+    }
+    .article-project .cont-img-project{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+}
+@media (max-width: 1280px) {
+
 }

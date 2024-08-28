@@ -71,6 +71,7 @@ html.swal2-shown, body.swal2-shown {
 .hero-home-email{
     margin-top: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -96,7 +97,10 @@ html.swal2-shown, body.swal2-shown {
     border-radius: 10px;
     transition: all .3s ease;
 }
-
+.buttons-home{
+    display: flex;
+    margin-top: 1rem;
+}
 .home .hero-home-inf .btn-hero-copy:hover{
     background-color: var(--primary-color-4);
 }
@@ -151,6 +155,12 @@ html.swal2-shown, body.swal2-shown {
     }
     .hero-home-inf .hero-home-description{
         font-size: 1.1rem;
+    }
+    .hero-home-email{
+        flex-direction: row;
+    }
+    .buttons-home{
+        margin-top: 0;
     }
 }
 
