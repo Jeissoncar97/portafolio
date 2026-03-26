@@ -42,11 +42,8 @@ function Header() {
 							</li>
 						</ul>
 					</nav>
-					
 				</div>
-
 			</div>
-      
 		</>
 	);
 }
