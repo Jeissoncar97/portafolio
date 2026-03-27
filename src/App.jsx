@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
 import './Estilos/projects.css'
 import './App.css'
 import './Estilos/section-hero-home.css'
