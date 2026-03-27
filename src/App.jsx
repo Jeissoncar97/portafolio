@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './Estilos/projects.css'
 import './App.css'
 import './Estilos/section-hero-home.css'
@@ -27,11 +28,12 @@ import GithubIcon from './components/icons/Github'
 import GithubMainIcon from './components/icons/GithubMain'
 import LinkedinIcon from './components/icons/Linkedin'
 import MailIcon from './components/icons/MailIcon'
-import CodeIcon from './components/icons/CodeIcon'
 import Person from './components/icons/Person'
 import Contact from './components/icons/ContactIcon'
 
 import './Estilos/footer.css'
+import Security from './components/icons/security'
+import Network from './components/icons/Network'
 
 function App() {
   
@@ -113,7 +115,51 @@ function App() {
         </div>
       </section>
       <section className='proyectos' id='projects'>
-        <h2><CodeIcon /> Proyectos</h2>
+        <h2><Security /> Proyectos ciberdegiridad</h2>
+        <div className="cont-linear">
+          <div className="linea"></div>
+        </div>
+        <div className='projects-all'>
+
+          <Project 
+          nameProject='Inicio de sesion'
+          imgProject={LoginProject}
+          alt='Imagen proyecto inicio de sesión'
+          skill1= 'React'
+          skill2= 'Firebase'
+          skill3= 'Mongo'
+          skill4= 'Express'
+          projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
+          linkGithub='#'
+          linkPage='#'
+          />
+          <Project 
+          nameProject='Fox Pizza Gourmet'
+          imgProject={FoxpizzaProject}
+          alt='Imagen Pagina Fox Pizza'
+          skill1= 'Html'
+          skill2= 'Css'
+          skill3= 'Javascript'
+          skill4= 'Bootstrap'
+          projectDescription = 'En este proyecto, realicé la página web de una pizzería familiar, con el objetivo de obtener más visitas. En la página se pueden ver varias secciones como el menú, contacto, ubicación y otras más.'
+          linkGithub='https://github.com/Jeissoncar97/PaginaFox'
+          linkPage='https://jeissoncar97.github.io/PaginaFox/'
+          />
+          <Project 
+          nameProject='Pagina de APISs'
+          imgProject={ApisProject}
+          alt='Imagen proyecto inicio de sesión'
+          skill1= 'Html'
+          skill2= 'Css'
+          skill3= 'Javascript'
+          skill4= 'Bootstrap'
+          projectDescription = 'En este proyecto, realicé una página donde se podrán encontrar varias secciones con APIs como cócteles, Rick y Morty, películas y más'
+          linkGithub='https://github.com/Jeissoncar97/Apis'
+          linkPage='https://jeissoncar97.github.io/Apis/'
+          />
+        </div>
+      </section><section className='proyectos' id='projects'>
+        <h2><Network /> Proyectos redes</h2>
         <div className="cont-linear">
           <div className="linea"></div>
         </div>
@@ -127,7 +173,6 @@ function App() {
           skill3= 'Mongo'
           skill4= 'Express'
           projectDescription = 'En este proyecto, hice un inicio de sesión con React y Firebase, donde se puede acceder de forma segura con clave encriptada. ¡Adentro tiene un juego increíble!'
-          linkGithub='#'
           linkPage='#'
           />
           <Project 

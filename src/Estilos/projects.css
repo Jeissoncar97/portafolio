@@ -54,7 +54,6 @@ section h2 svg{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 .project-content-general h3{
     font-size: 1.5rem;
@@ -78,6 +77,9 @@ section h2 svg{
 }
 .project-content .project-description {
     margin-bottom: .5rem;
+}
+.project-content .project-description p{
+    padding: 0.3rem;
 }
 .project-content .project-footer{
     display: flex;
