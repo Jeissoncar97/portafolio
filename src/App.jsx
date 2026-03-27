@@ -60,7 +60,7 @@ function App() {
       
       <section className='home' id='home'>
         <div className="hero-home-inf">
-          <h1>Hola, Soy Jeisson Cardenas</h1>
+          <h1>Hola, Soy Jeisson Cardenas el mejor</h1>
           <div className='hero-home-description'>
             <p>Estudiante de ingenieria en sistemas, apasionado por el <span>DESARROLLO WEB. </span></p>
           </div>
