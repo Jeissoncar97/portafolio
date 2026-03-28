@@ -1,3 +1,5 @@
+
 .hero{
-    background-color: #008000;
+    background-color: var(--primary-blog);
+    color: white;
 }

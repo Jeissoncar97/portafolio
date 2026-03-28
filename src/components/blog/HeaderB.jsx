@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header() {
 	return (
 		<>
-			<div className="header">
+			<div className="headerB">
 				<div className="header_content">
 					<div className="header__logo-container">
 						<div className="header__logo-img-cont">
@@ -22,13 +22,11 @@ function Header() {
 					</div>
 					<nav className="header_main article-project">
 						<ul className="header-links">
-							<Link to="/" >
-								<li className="header-link link" >
+							<Link to="/">
+								<li className="header-link link">
 									<p>Portafolio</p>
 								</li>
 							</Link>
-							
-							
 						</ul>
 					</nav>
 				</div>

@@ -1,6 +1,7 @@
 import Header from "./HeaderB";
 import BlogList from "./BlogList";
 import "./blog.css";
+import "./headerB.css";
 
 function Blog() {
 	return (
@@ -13,17 +14,13 @@ function Blog() {
 				</p>
 
 				<div style={{ marginTop: "20px" }}>
-					<div
-						key={2}
-					
-					>
+					<div key={2}>
 						<h2>sdfdsfsdf</h2>
 						<p>sdfsdfsdf</p>
 					</div>
 				</div>
-			<BlogList></BlogList>
+				<BlogList></BlogList>
 			</div>
-			
 		</div>
 	);
 }
