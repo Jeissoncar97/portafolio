@@ -3,7 +3,7 @@ import Social from "./Socials";
 import Copy from "../assets/copy.svg";
 import Send from "../assets/send.svg";
 import Project from "./Project";
-import LoginProject from "../assets/imgProjects/login.png";
+import htb from "../assets/imgProjects/htb.webp";
 import FoxpizzaProject from "../assets/imgProjects/paginaFox.png";
 import ApisProject from "../assets/imgProjects/Apis.png";
 import Tecnologias from "./Tecnologias";
@@ -122,7 +122,7 @@ const Hero = () => {
 					<Link to="/blog">
 						<Project
 							nameProject="Inicio de sesion"
-							imgProject={LoginProject}
+							imgProject={htb}
 							alt="Imagen proyecto inicio de sesión"
 							skill1="React"
 							skill2="Firebase"
@@ -163,7 +163,7 @@ const Hero = () => {
 				<div className="projects-all">
 					<Project
 						nameProject="Inicio de sesion"
-						imgProject={LoginProject}
+						imgProject={htb}
 						alt="Imagen proyecto inicio de sesión"
 						skill1="React"
 						skill2="Firebase"

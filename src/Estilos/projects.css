@@ -1,5 +1,5 @@
 section{
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding-top: 5rem;
 }
@@ -22,7 +22,7 @@ section h2 svg{
     flex-direction: column;
 }
 .proyectos .article-project {
-    margin-bottom:120px;
+    margin-bottom:80px;
     display: flex;
     justify-content: center;
     align-items: center;

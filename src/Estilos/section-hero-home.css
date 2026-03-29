@@ -31,7 +31,7 @@ html.swal2-shown, body.swal2-shown {
     overflow-y: auto ;
   }
 .hero-home-inf{
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     align-items: center;

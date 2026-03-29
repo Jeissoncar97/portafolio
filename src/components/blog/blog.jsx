@@ -1,11 +1,12 @@
 import Header from "./HeaderB";
 import BlogList from "./BlogList";
+import "./blog.css";
 
 function Blog() {
 	return (
 		<div>
 			<Header></Header>
-			<div style={{ paddingTop: "120px" }}>
+			<div className="hero" style={{ paddingTop: "120px" }}>
 				<h1>🧠 Mini Blog - Hack The Box</h1>
 				<p>
 					Aquí publico mis writeups y aprendizajes en ciberseguridad.
@@ -20,8 +21,8 @@ function Blog() {
 						<p>sdfsdfsdf</p>
 					</div>
 				</div>
-			</div>
 			<BlogList></BlogList>
+			</div>
 			
 		</div>
 	);

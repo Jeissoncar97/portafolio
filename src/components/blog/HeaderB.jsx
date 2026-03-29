@@ -1,5 +1,5 @@
 import Profile from "../../assets/Fotojeisson.png";
-import "../../Estilos/header.css";
+import "./headerB.css";
 
 import { Link } from "react-router-dom";
 
