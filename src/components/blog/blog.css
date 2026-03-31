@@ -1,5 +1,10 @@
 
-.hero{
+.asdas{
     background-color: var(--primary-blog);
     color: white;
+}
+.hero{
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
 }

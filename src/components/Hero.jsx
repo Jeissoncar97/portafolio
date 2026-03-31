@@ -204,7 +204,7 @@ const Hero = () => {
 				<div className="cont-about">
 					<div className="about">
 						<div className="about-description">
-							<h3>Conoceme</h3>
+							<h3>Conóceme</h3>
 							<div className="cont-foto">
 								<img src={Foto} alt="Foto Jeisson Cardenas" />
 							</div>

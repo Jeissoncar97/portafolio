@@ -17,12 +17,14 @@ body{
     font-weight: 500;
     scroll-behavior: smooth;
 }
-.header{
+.headerB{
     width: 100%;
     padding: 15px 0;
-    background-color: #fff;
+    background-color: var(--primary-blog);
+    color: white;
+    border-bottom: 1px solid var(--border-blog);
 }
-.header_content{
+.headerB .header_content{
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
@@ -30,52 +32,50 @@ body{
     justify-content: center;
     padding: 0px 20px;
 }
-.header__logo-container{
+.headerB .header__logo-container{
     display: flex;
     align-items: center;
     font-size: 1.3rem;
     cursor: pointer;
     transition: color 0.3s ease;
 }
-.header__logo-container:hover{
-    color: var(--primary-color);
+.headerB .header__logo-container:hover{
+    color: white;
 }
-.header_main {
+.headerB .header_main {
     display: none;
     justify-content: center;
     align-items: center;
 }
-.header_main ul{
+.headerB .header_main ul{
     display: flex;
     
 }
-.header_main ul li{
-    color: black;
+.headerB .header_main ul li{
+    color: white;
     
 }
-.header_main ul li a{
-    color: black;
+.headerB .header_main ul li a{
+    color: white;
     font-size: 1.2rem;
     transition: all 0.3s ease ;
     padding: 1.5rem 1.5rem;
 }
-.header_main ul li a:hover{
-    color: var(--primary-color);
-}
-.header_main ul li p{
-    color: black;
+
+.headerB .header_main ul li p{
+    color: white;
     font-size: 1.2rem;
     transition: all 0.3s ease ;
     padding: 1.5rem 1.5rem;
 }
-.header_main ul li p:hover{
-    color: var(--primary-color);
+.headerB .header_main ul li p:hover{
+    color: white;
 }
-.header__logo-sub{
+.headerB .header__logo-sub{
     font-weight: 600;
     letter-spacing: 1px;
 }
-.header__logo-img-cont {
+.headerB .header__logo-img-cont {
     width: 3rem;
     height: 3rem;
     border-radius: 50px;
@@ -83,27 +83,26 @@ body{
     margin-right: 1.5rem;
     
 }
-.imagen-perfil{
-    background-color: var(--primary-color);
-    border-radius: 50rem;
+.headerB .imagen-perfil{
+    background-color: var(--primary-blog);
     width: 100%;
     height: 100%;
 }
-.header_main-responsive{
+.headerB .header_main-responsive{
     display: none;
     width: 100%;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
 }
 
 
 @media (min-width: 840px) {
-    .header{
+    .headerB{
         position: fixed;
         z-index: 1;
     }
-    .header_content{
+    .headerB .header_content{
         margin: 0 auto;
         max-width: 1200px;
         width: 100%;
@@ -111,7 +110,7 @@ body{
         padding: 0px 20px;
         height: 48px;
     }
-    .header_main {
+    .headerB .header_main {
         display: flex;
         justify-content: center;
         align-items: center;
